@@ -1,0 +1,121 @@
+/* Navbar.css */
+
+/* General navbar styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Menu styling */
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .menu-item-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    color: #007bff;
+    transform: translateY(-3px); /* Add a subtle hover bounce */
+  }
+  
+  .menu-icon {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item-wrapper:hover .menu-icon {
+    transform: rotate(20deg); /* Rotate the icon on hover */
+  }
+  
+  /* Underline animation on hover */
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+  }
+  
+  .menu-item-wrapper:hover .menu-item::before {
+    width: 100%; /* Full underline on hover */
+  }
+  
+  /* Menu text styling */
+  .menu-text {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-text {
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+  
+  /* Logo styling */
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    height: 50px;
+    object-fit: cover;
+    animation: popIn 1s ease-in-out;
+  }
+  
+  /* Placeholder for right side (empty to balance) */
+  .right-placeholder {
+    width: 50px;
+  }
+  
+  /* Fade-in animation for the navbar */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Pop-in animation for the logo */
+  @keyframes popIn {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

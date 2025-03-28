@@ -1,0 +1,110 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .feed-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .post-card {
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-content {
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .post-image:hover {
+    opacity: 0.9;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .like-btn, .comment-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .like-btn:hover, .comment-btn:hover {
+    color: #ff6464;
+    transform: translateY(-2px);
+  }
+  
+  .like-btn svg, .comment-btn svg {
+    margin-right: 8px;
+  }
+  
+  .like-btn span, .comment-btn span {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #4CAF50;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 24px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1.8rem;
+    }
+  
+    .post-content {
+      font-size: 1.1rem;
+    }
+  
+    .post-image {
+      max-height: 300px;
+    }
+  
+    .like-btn span, .comment-btn span {
+      font-size: 0.9rem;
+    }
+  }
+  

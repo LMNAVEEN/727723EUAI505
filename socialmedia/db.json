@@ -1,0 +1,36 @@
+{
+    "users": [
+      { "id": 1, "name": "John Doe", "image": "/images/user1.jpg" },
+      { "id": 2, "name": "Helen Moore", "image": "/images/user2.jpg" },
+      { "id": 3, "name": "Ivy Taylor", "image": "/images/user3.jpg" },
+      { "id": 4, "name": "Jack Anderson", "image": "/images/user4.jpg" },
+      { "id": 5, "name": "Kathy Thomas", "image": "/images/user5.jpg" },
+      { "id": 6, "name": "Liam Jackson", "image": "/images/user1.jpg" },
+      { "id": 7, "name": "Mona Harris", "image": "/images/user7.jpg" },
+      { "id": 8, "name": "Nathan Clark", "image": "/images/user1.jpg" },
+      { "id": 9, "name": "Olivia Levis", "image": "/images/user2.jpg" },
+      { "id": 10, "name": "Paul Walker", "image": "/images/user3.jpg" },
+      { "id": 11, "name": "Quinn Scott", "image": "/images/user5.jpg" },
+      { "id": 12, "name": "Jane Doe", "image": "/images/user4.jpg" },
+      { "id": 13, "name": "Alice Smith", "image": "/images/user3.jpg" }
+    ],
+    "posts": [
+      { "id": 150, "userid": 1, "content": "animals", "image": "/images/user1.jpg" },
+      { "id": 370, "userid": 1, "content": "claws", "image": "/images/user2.jpg" },
+      { "id": 344, "userid": 1, "content": "zebra", "image": "/images/user3.jpg" },
+      { "id": 952, "userid": 1, "content": "wild", "image": "/images/user4.jpg" },
+      { "id": 647, "userid": 1, "content": "cute", "image": "/images/user5.jpg" },
+      { "id": 421, "userid": 1, "content": "adorable", "image": "/images/user1.jpg" },
+      { "id": 461, "userid": 1, "content": "funny", "image": "/images/user7.jpg" },
+      { "id": 246, "userid": 1, "content": "intresting", "image": "/images/user1.jpg" },
+      { "id": 161, "userid": 1, "content": "lovely", "image": "/images/user2.jpg" }
+    ],
+    "comments": [
+      { "id": 3893, "postid": 150, "content": "wild animals", "image": "/images/user1.jpg" },
+      { "id": 4791, "postid": 150, "content": "Long claws", "image": "/images/user2.jpg" },
+      { "id": 5011, "postid": 370, "content": "Stunning", "image": "/images/user3.jpg" },
+      { "id": 2223, "postid": 952, "content": "Zebra post", "image": "/images/user4.jpg" },
+      { "id": 1234, "postid": 647, "content": "Cat post", "image": "/images/user5.jpg" }
+    ]
+  }
+  
